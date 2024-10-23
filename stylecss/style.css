@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --Off-Grey: hsl(0, 0%, 8%);
+}
+
+body,
+.profile-pic,
+.container,
+.button-cards {
+    display: flex;
+    flex-direction: column;
+
+}
+
+body {
+    background-color: var(--Off-Grey);
+    color: var(--white);
+    padding: 1.8rem 3rem;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--dark-grey);
+    padding: 1.4rem;
+    width: 18rem;
+    min-height: 27rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+
+}
+
+.attribution {
+    font-size: 11px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--green);
+}
+
+.profile-pic {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 0.8rem;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.location {
+    color: var(--green);
+    font-size: 0.8rem;
+    margin-bottom: 1.1rem;
+    font-weight: bold
+}
+
+.self-description {
+    font-size: 0.65rem;
+    margin-bottom: 2rem;
+
+}
+
+.link {
+    background-color: var(--grey);
+    color: white;
+    padding: 0.6rem 5.6rem;
+    border: none;
+    margin-bottom: 0.6rem;
+    text-decoration: none;
+    transition: background-color 0.5s ease, color 0.5s ;
+    text-align: center;
+}
+.link:hover {
+    background-origin: var(--green);
+    color:var(--green)
+}
+.link :focus {
+    outline: 2px solid var(--green);
+
+}
